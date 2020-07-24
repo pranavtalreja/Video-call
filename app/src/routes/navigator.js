@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useEffect, useState } from "react";
-
+import background from "./images/avatar.jpg";
 const Navigator = (params) => {
   let { username } = params;
   const [data, finder] = useState({
@@ -26,7 +26,13 @@ const Navigator = (params) => {
   return (
     <nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
       <div className="container">
-        <a className="navbar-brand logo" href="/index"></a>
+        <a className="navbar-brand logo" href="/index">
+          <img
+            src={require(`./images/meeting.png`)}
+            width="100"
+            height="50"
+          ></img>
+        </a>
         <button
           data-toggle="collapse"
           className="navbar-toggler"
