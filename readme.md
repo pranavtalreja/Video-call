@@ -4,6 +4,8 @@
 
 ##### the process to run the application are shared below
 
+##### video explanation in the video folder provided for help
+
 ##### download nodejs from the browser on your pc using website nodejs.org
 
 - on installation open the terminal or cmd to check installation
@@ -23,7 +25,7 @@
 
   - terminal 2 // frontend
 
-    - cd application/
+    - cd app/
     - npm i --save -g
     - npm i
     - npm start
