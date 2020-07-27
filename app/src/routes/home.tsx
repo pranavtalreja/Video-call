@@ -28,7 +28,34 @@ const Home: FunctionComponent = () => {
     <div>
       <Navigator username={userNames}></Navigator>
       {userNames ? (
-        <div></div>
+        <main className="page lanidng-page">
+          <section className="portfolio-block block-intro">
+            <div className="container">
+              <div className="about-me">
+                <h1>About</h1>
+                <p>
+                  Meeting station is a recently developed and forward looking
+                  video calling application. In current times there has been
+                  heavy increase in the use of online collaboration tools to
+                  boost work from home productivity.
+                </p>
+
+                <p>
+                  {" "}
+                  In current times there has been heavy increase in the use of
+                  online collaboration tools to boost work from home.
+                </p>
+                <p>
+                  productivity. Meeting station has compiled these essential
+                  tools and added more to make work collab more efficient in a
+                  safe platform to ensure the users are mentally healthy.
+                </p>
+                <p>For Hackathon Team Members Icluded Are -</p>
+                <p>Abhinav Prem, Pranav Talreja, Arnav Gupta</p>
+              </div>
+            </div>
+          </section>
+        </main>
       ) : (
         <main className="page lanidng-page">
           <section className="portfolio-block block-intro">
@@ -36,19 +63,24 @@ const Home: FunctionComponent = () => {
               <div className="about-me">
                 <h1>About</h1>
                 <p>
-                  This is a concept through which doctors and patients can
-                  interact with each other, make appointments and even see the
-                  waiting list
+                  Meeting station is a recently developed and forward looking
+                  video calling application. In current times there has been
+                  heavy increase in the use of online collaboration tools to
+                  boost work from home productivity.
+                </p>
+
+                <p>
+                  {" "}
+                  In current times there has been heavy increase in the use of
+                  online collaboration tools to boost work from home.
                 </p>
                 <p>
-                  Doctors have a choice wheather they are willing to check all
-                  patients or want to make their account private
+                  productivity. Meeting station has compiled these essential
+                  tools and added more to make work collab more efficient in a
+                  safe platform to ensure the users are mentally healthy.
                 </p>
-                <p>
-                  patients can interact with others check history to check the
-                  doctors preference
-                </p>
-                <p>this help in reduced waiting time too</p>
+                <p>For Hackathon Team Members Icluded Are -</p>
+                <p>Abhinav Prem, Pranav Talreja, Arnav Gupta</p>
               </div>
             </div>
           </section>

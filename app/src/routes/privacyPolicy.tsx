@@ -29,6 +29,10 @@ const PrivacyPolicy: FunctionComponent = () => {
       <Navigator username={userNames}></Navigator>
       <main>
         <br></br>
+        <br></br>
+        <h1>hidden</h1>
+        <br></br>
+        <br></br>
         <h1>Privacy Policy Of This App Is Here By Shown</h1>
         EFFECTIVE: July 24, 2020. IMPORTANT, READ CAREFULLY : YOUR USE OF AND
         ACCESS TO THE WEBSITE AND PRODUCTS AND SERVICES AND ASSOCIATED SOFTWARE

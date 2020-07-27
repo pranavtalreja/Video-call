@@ -54,7 +54,7 @@ const Navigator = (params) => {
               </a>
             </li>
             <li className="nav-item" role="presentation">
-              <a className="nav-link" href="/schedule">
+              <a className="nav-link" href="http://localhost:3000/">
                 Meeting
               </a>
             </li>
@@ -71,11 +71,7 @@ const Navigator = (params) => {
                 </a>
               </li>
             ) : (
-              <li className="nav-item" role="presentation">
-                <a className="nav-link" href="/about">
-                  About
-                </a>
-              </li>
+              <div></div>
             )}
             {username ? (
               <li className="nav-item" role="presentation">

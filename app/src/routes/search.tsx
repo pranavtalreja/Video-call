@@ -29,6 +29,7 @@ const Search: FunctionComponent = () => {
     <div>
       <Navigator username={userNames}></Navigator>
       <main className="page contact-page">
+        <br></br>
         <label htmlFor="name">Search</label>
         <div className="form-group">
           <input

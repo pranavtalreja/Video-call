@@ -12,7 +12,7 @@ const bodyParser = require("body-parser");
 //*imports
 
 //*ports
-const applicationParams = "http://localhost:3000/";
+const applicationParams = "http://localhost:5000/";
 const serverPort = process.env.PORT || "1234";
 const serverParams = "http://localhost:1234";
 const mongoosePort = process.env.MONGODB_URI || "mongodb://localhost/videocall";

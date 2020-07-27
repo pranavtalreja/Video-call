@@ -5,9 +5,9 @@ const Footer: FunctionComponent = () => {
     <footer className="page-footer">
       <div className="container">
         <div className="links">
-          <a href="#">About me</a>
+          <a href="/index">About me</a>
           <a href="/privacy">Privacy</a>
-          <a href="#">Projects</a>
+          <a href="https://github.com/info-arnav/videoCall">Projects</a>
         </div>
         <div className="social-icons">
           <a href="#">

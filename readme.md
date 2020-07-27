@@ -6,6 +6,8 @@
 
 ##### video explanation in the video folder provided for help
 
+##### download mongosb on your pc for viewing the server
+
 ##### download nodejs from the browser on your pc using website nodejs.org
 
 - on installation open the terminal or cmd to check installation
@@ -28,4 +30,20 @@
     - cd app/
     - npm i --save -g
     - npm i
+    - export PORT=5000
     - npm start
+
+  - terminal 3 // video call
+
+    - cd twillio-video-react-hooks
+    - npm i --save -g
+    - npm i
+    - npm run start
+
+  - terminal 4 //video server
+
+    - cd twillio-video-reat-hooks
+    - cd serve
+    - npm i --save -g
+    - npm i
+    - node index.js
