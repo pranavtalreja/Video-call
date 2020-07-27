@@ -46,6 +46,7 @@ const userDatas = new mongoose.Schema({
   private: { type: Array, default: ["PUBLIC"] },
   profession: { type: String },
   other: { type: String },
+  location: { type: String, default: "location" },
   approved: { type: Boolean, default: false },
   requests: { type: Array, default: [] },
 });
@@ -247,7 +248,7 @@ app.get("/active/profile", (req, res) => {
           following: user.following,
           profession: user.profession,
           approved: "verified",
-          privacy: user.private,
+          privacy: user.private[user.private.length - 1],
         });
       } else {
         res.json({
@@ -258,7 +259,7 @@ app.get("/active/profile", (req, res) => {
           following: user.following,
           profession: user.profession,
           approved: "not-verified",
-          privacy: user.private,
+          privacy: user.private[user.private.length - 1],
         });
       }
     }

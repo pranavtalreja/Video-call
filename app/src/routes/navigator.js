@@ -8,6 +8,7 @@ const Navigator = (params) => {
     followers: "",
     username: "",
     profession: "",
+    privacy: "",
   });
   const [datac, finderc] = useState({
     name: "",
@@ -17,6 +18,7 @@ const Navigator = (params) => {
     following: [],
     profession: "",
     approved: "",
+    privacy: "",
   });
   useEffect(() => {
     fetch(`http://localhost:1234/active/profile`).then((e) =>
@@ -83,11 +85,19 @@ const Navigator = (params) => {
               <div></div>
             )}
             {username ? (
-              <li className="nav-item" role="presentation">
-                <a className="nav-link" href="http://localhost:1234/logout">
-                  Activites
-                </a>
-              </li>
+              data.privacy == "PRIVATE" ? (
+                <li className="nav-item" role="presentation">
+                  <a className="nav-link" href="http://slither.io/">
+                    Status - Bored
+                  </a>
+                </li>
+              ) : (
+                <li className="nav-item" role="presentation">
+                  <a className="nav-link" href="http://slither.io/">
+                    status-active-no-games
+                  </a>
+                </li>
+              )
             ) : (
               <div></div>
             )}

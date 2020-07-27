@@ -5,6 +5,7 @@ import Navigator from "./navigator";
 import { useParams } from "react-router-dom";
 
 const Search: FunctionComponent = () => {
+  const date = new Date().toLocaleTimeString();
   const [extra, extras] = useState("");
   const [userNames, finder] = useState("");
   const [value, changer] = useState("");
@@ -45,7 +46,8 @@ const Search: FunctionComponent = () => {
             <div></div>
           ) : (
             <button className="btn btn-primary btn-block btn-lg" disabled>
-              go to the login section and please login to follow someone
+              go to the login section and please login to follow someone and to
+              view time
             </button>
           )}
           <div>
@@ -70,7 +72,7 @@ const Search: FunctionComponent = () => {
                             <div></div>
                           ) : (
                             <div>
-                              {e.userName} - {e.profession}
+                              {e.userName} - {e.profession} - {date}
                             </div>
                           )}
                         </h4>
@@ -95,7 +97,7 @@ const Search: FunctionComponent = () => {
                             <div></div>
                           ) : (
                             <div>
-                              {e.userName} - {e.profession}
+                              {e.userName} - {e.profession} - {date}
                             </div>
                           )}
                         </h4>

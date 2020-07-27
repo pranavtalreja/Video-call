@@ -42,7 +42,7 @@
 
   - terminal 4 //video server
 
-    - cd twillio-video-reat-hooks
+    - cd video
     - cd serve
     - npm i --save -g
     - npm i
