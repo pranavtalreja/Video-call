@@ -16,34 +16,34 @@
 
 ##### clone the resporatory to a fresh folder
 
-- open four terminals
+- open two terminals and change directory to the folder locaion
+
+  - to do this copy the folder path which contains all the other folders such as app, video, applicationServer, etc
+  - then open terminal and write cd pasteTheFilePathHere
 
   - terminal 1 // server
 
-    - cd applicationServer/
-    - npm i --save -g
+    - npm i concurrently
+    - cd app
     - npm i
-    - node server.ts
+    - cd ..
+    - npm i
+    - cd applicationServer
+    - npm i
+    - cd ..
+    - cd video
+    - npm i
+    - cd server
+    - npm i
+    - cd ..
+    - cd ..
+    - npm run tsinge
 
   - terminal 2 // frontend
 
     - cd app/
-    - npm i --save -g
-    - npm i
-    - export PORT=5000
-    - npm start
-
-  - terminal 3 // video call
-
-    - cd twillio-video-react-hooks
-    - npm i --save -g
-    - npm i
+    - if linux or mac only
+      - export PORT=5000
+    - if windows only and only
+      - set PORT=5000
     - npm run start
-
-  - terminal 4 //video server
-
-    - cd video
-    - cd serve
-    - npm i --save -g
-    - npm i
-    - node index.js

@@ -22,11 +22,9 @@
   },
   "scripts": {
     "server": "node server/server.ts",
-    "start": " export PORT=5000 && react-scripts start",
+    "start": " react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "start-linuxmac": "export PORT = 5000 && react-scripts start",
-    "start-windows": "set PORT = 5000 && react-scripts start",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
