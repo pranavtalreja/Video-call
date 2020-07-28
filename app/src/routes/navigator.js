@@ -93,7 +93,7 @@ const Navigator = (params) => {
                 </li>
               ) : (
                 <li className="nav-item" role="presentation">
-                  <a className="nav-link" href="http://slither.io/">
+                  <a className="nav-link" href="/">
                     status-active-no-games
                   </a>
                 </li>
