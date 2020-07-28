@@ -4,11 +4,12 @@
   "description": "##### this web application is designed on node and react and functions on a single github page",
   "main": "index.js",
   "scripts": {
-    "fronted-windows": "npm i concurrently && npm i && cd app/ && npm i && npm start-windows",
-    "fronted-linuxmac": "npm i concurrently && npm i && cd app/ && npm i && npm start-linuxmac",
-    "servif": "cd applicationServer/ && npm i && node server.ts",
-    "vserif": "cd video/server/ && npm i && node index.js",
-    "vfronted": "cd video/ && npm i && npm run start",
+    "fronted-windows": "cd app/ && npm start-windows",
+    "fronted-linuxmac": "cd app/ && npm run start-linuxmac",
+    "servif": "cd applicationServer/ && node server.ts",
+    "vserif": "cd video/server/ && node index.js",
+    "install": "npm i && cd app && npm i && cd .. && cd applicationServer && npm i && cd .. && cd video && npm i && cd server && npm i",
+    "vfronted": "cd video/ && npm run start",
     "tsinge-windows": "concurrently \"npm run servif\" \"npm run fronted-windows\" \"npm run vserif\" \"npm run vfronted\"",
     "tsinge-linuxmac": "concurrently \"npm run servif\" \"npm run fronted-linuxmac\" \"npm run vserif\" \"npm run vfronted\"",
     "test": "echo \"Error: no test specified\" && exit 1"
