@@ -1,0 +1,31 @@
+{
+  "name": "videoCall",
+  "version": "1.0.0",
+  "description": "##### this web application is designed on node and react and functions on a single github page",
+  "main": "index.js",
+  "scripts": {
+    "fronted-windows": "npm i concurrently && npm i && cd app/ && npm i && npm start-windows",
+    "fronted-linuxmac": "npm i concurrently && npm i && cd app/ && npm i && npm start-linuxmac",
+    "servif": "cd applicationServer/ && npm i && node server.ts",
+    "vserif": "cd video/server/ && npm i && node index.js",
+    "vfronted": "cd video/ && npm i && npm run start",
+    "tsinge-windows": "concurrently \"npm run servif\" \"npm run fronted-windows\" \"npm run vserif\" \"npm run vfronted\"",
+    "tsinge-linuxmac": "concurrently \"npm run servif\" \"npm run fronted-linuxmac\" \"npm run vserif\" \"npm run vfronted\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/info-arnav/videoCall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/info-arnav/videoCall/issues"
+  },
+  "homepage": "https://github.com/info-arnav/videoCall#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2"
+  }
+}

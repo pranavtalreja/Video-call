@@ -16,7 +16,7 @@
 
 ##### clone the resporatory to a fresh folder
 
-- open two terminals
+- open four terminals
 
   - terminal 1 // server
 
