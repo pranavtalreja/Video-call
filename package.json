@@ -8,7 +8,6 @@
     "fronted-linuxmac": "cd app/ && npm run start-linuxmac",
     "servif": "cd applicationServer/ && node server.ts",
     "vserif": "cd video/server/ && node index.js",
-    "install": "npm i && cd app && npm i && cd .. && cd applicationServer && npm i && cd .. && cd video && npm i && cd server && npm i",
     "vfronted": "cd video/ && npm run start",
     "tsinge-windows": "concurrently \"npm run servif\" \"npm run fronted-windows\" \"npm run vserif\" \"npm run vfronted\"",
     "tsinge-linuxmac": "concurrently \"npm run servif\" \"npm run fronted-linuxmac\" \"npm run vserif\" \"npm run vfronted\"",
@@ -28,5 +27,12 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "cross-env": "^7.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-pino-logger": "^5.0.0",
+    "jquery": "^3.5.1",
+    "twilio": "^3.48.1"
   }
 }
