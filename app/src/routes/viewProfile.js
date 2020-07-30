@@ -27,10 +27,8 @@ const RProfile = () => {
     approved: "",
   });
   useEffect(() => {
-    fetch(`http://localhost:1234/active/profile`).then((e) =>
-      e.json().then((e) => finder(e))
-    );
-    fetch(`http://localhost:1234/find/profile/${id}`)
+    fetch(`/active/profile`).then((e) => e.json().then((e) => finder(e)));
+    fetch(`/find/profile/${id}`)
       .then((e) => e.json())
       .then((e) => finderc(e));
   }, []);

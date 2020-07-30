@@ -14,13 +14,11 @@ const Register: FunctionComponent = () => {
   const [check, checkSetter] = useState("");
   const [value, changer] = useState("");
   useEffect(() => {
-    fetch("http://localhost:1234/register/error").then((e) =>
-      e.text().then((e) => changer(e))
-    );
-    fetch(`http://localhost:1234/search/data/${userName}`).then((e) =>
+    fetch("/register/error").then((e) => e.text().then((e) => changer(e)));
+    fetch(`/search/data/${userName}`).then((e) =>
       e.json().then((e) => finders(e))
     );
-    fetch(`http://localhost:1234/user/name`)
+    fetch(`/user/name`)
       .then((e) => e.text())
       .then((e) => finder(e));
   }, [userName]);
@@ -33,7 +31,7 @@ const Register: FunctionComponent = () => {
             <div className="heading">
               <h2>Registeration</h2>
             </div>
-            <form method="POST" action="http://localhost:1234/user">
+            <form method="POST" action="/user">
               {id ? (
                 <div>
                   <h4>{value}</h4>

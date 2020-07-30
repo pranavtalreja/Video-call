@@ -19,9 +19,7 @@ const Profile = () => {
     approved: "",
   });
   useEffect(() => {
-    fetch(`http://localhost:1234/active/profile`).then((e) =>
-      e.json().then((e) => finder(e))
-    );
+    fetch(`/active/profile`).then((e) => e.json().then((e) => finder(e)));
   }, []);
   return (
     <div>

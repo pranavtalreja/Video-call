@@ -12,17 +12,17 @@ const Search: FunctionComponent = () => {
   const [allValues, setValue] = useState([{ userName: "", profession: "" }]);
   const [array, setter] = useState({ username: "", phone: "", name: "" });
   useEffect(() => {
-    fetch(`http://localhost:1234/user/name`)
+    fetch(`/user/name`)
       .then((e) => e.text())
       .then((e) => finder(e));
-    fetch(`http://localhost:1234/search/data/${value}`)
+    fetch(`/search/data/${value}`)
       .then((e) => e.json())
       .then((e) => setter(e));
-    fetch(`http://localhost:1234/all/values/${value}`)
+    fetch(`/all/values/${value}`)
       .then((e) => e.json())
       .then((e) => setValue(e));
-    fetch(`http://localhost:1234/`).then((e) => e.text());
-    fetch(`http://localhost:1234/follower/boolean`)
+    fetch(`/`).then((e) => e.text());
+    fetch(`/follower/boolean`)
       .then((e) => e.json())
       .then((e) => extras(e.array[0].followers));
   }, [value]);
@@ -51,7 +51,7 @@ const Search: FunctionComponent = () => {
             </button>
           )}
           <div>
-            <a href={`http://localhost:1234/search/result/${array}`}>
+            <a href={`/search/result/${array}`}>
               <h4>
                 {array.username == userNames ? <div></div> : array.username}
               </h4>
@@ -62,10 +62,7 @@ const Search: FunctionComponent = () => {
                   <div></div>
                 ) : userNames ? (
                   extra.indexOf(e.userName) == -1 ? (
-                    <form
-                      action={`http://localhost:1234/add/follower/${e.userName}`}
-                      method="POST"
-                    >
+                    <form action={`/add/follower/${e.userName}`} method="POST">
                       <a href={`/profile/${e.userName}`}>
                         <h4>
                           {e.userName == userNames ? (
@@ -88,7 +85,7 @@ const Search: FunctionComponent = () => {
                     </form>
                   ) : (
                     <form
-                      action={`http://localhost:1234/add/unfollower/${e.userName}`}
+                      action={`/add/unfollower/${e.userName}`}
                       method="POST"
                     >
                       <a href={`/profile/${e.userName}`}>
