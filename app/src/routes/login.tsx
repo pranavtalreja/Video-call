@@ -9,9 +9,11 @@ const Login: FunctionComponent = () => {
   const [userNames, finder] = useState("");
   let [value, changer] = useState("");
   useEffect(() => {
-    fetch("/login/error").then((e) => e.text().then((e) => changer(e)));
+    fetch("http://localhost:1234/login/error").then((e) =>
+      e.text().then((e) => changer(e))
+    );
   });
-  fetch(`/user/name`)
+  fetch(`http://localhost:1234/user/name`)
     .then((e) => e.text())
     .then((e) => finder(e));
   return (
@@ -23,7 +25,7 @@ const Login: FunctionComponent = () => {
             <div className="heading">
               <h2>Login</h2>
             </div>
-            <form method="POST" action="/auth">
+            <form method="POST" action="http://localhost:1234/auth">
               {value ? (
                 <div>
                   <h4>the {value} is incorrect</h4>

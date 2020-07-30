@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  videocall:
+    image: videocall
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000
+      - 5000
+      - 3001
+      - 1234
+      - 4000
+      - 7144
+      - 31
+      - 17
+      - 22
+      - 1

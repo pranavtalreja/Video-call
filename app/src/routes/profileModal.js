@@ -15,14 +15,16 @@ const ProfileModal = (props) => {
   const [extrat, extrast] = useState([]);
   let lol = "";
   useEffect(() => {
-    fetch(`/active/profile`).then((e) => e.json().then((e) => finder(e)));
-    fetch(`/find/profile/${id}`)
+    fetch(`http://localhost:1234/active/profile`).then((e) =>
+      e.json().then((e) => finder(e))
+    );
+    fetch(`http://localhost:1234/find/profile/${id}`)
       .then((e) => e.json())
       .then((e) => finderc(e));
-    fetch(`/user/name`)
+    fetch(`http://localhost:1234/user/name`)
       .then((e) => e.text())
       .then((e) => findered(e));
-    fetch(`/follower/boolean`)
+    fetch(`http://localhost:1234/follower/boolean`)
       .then((e) => e.json())
       .then((e) => extras(e.array[0].followers));
   }, []);
@@ -41,7 +43,10 @@ const ProfileModal = (props) => {
                     e == data ? (
                       <div>
                         <a href={`/profile/${e}`}>{e}</a>
-                        <form action={`/add/unfollower/${e}`} method="POST">
+                        <form
+                          action={`http://localhost:1234/add/unfollower/${e}`}
+                          method="POST"
+                        >
                           <input name="newFollower" type="e" hidden />
                           <button
                             disabled
@@ -54,7 +59,10 @@ const ProfileModal = (props) => {
                     ) : (
                       <div>
                         <a href={`/profile/${e}`}>{e}</a>
-                        <form action={`/add/unfollower/${e}`} method="POST">
+                        <form
+                          action={`http://localhost:1234/add/unfollower/${e}`}
+                          method="POST"
+                        >
                           <input name="newFollower" type="e" hidden />
                           <button
                             type="submit"
@@ -71,7 +79,10 @@ const ProfileModal = (props) => {
                       {e == userNames ? (
                         <div></div>
                       ) : (
-                        <form action={`/add/follower/${e}`} method="POST">
+                        <form
+                          action={`http://localhost:1234/add/follower/${e}`}
+                          method="POST"
+                        >
                           <input name="newFollower" type="e" hidden />
                           <button
                             type="submit"

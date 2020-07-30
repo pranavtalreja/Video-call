@@ -16,14 +16,16 @@ const EditModal: FunctionComponent = (props) => {
   const [check, checkSetter] = useState("");
   const [value, changer] = useState("");
   useEffect(() => {
-    fetch("/register/error").then((e) => e.text().then((e) => changer(e)));
-    fetch(`/search/data/${userName}`).then((e) =>
+    fetch("http://localhost:1234/register/error").then((e) =>
+      e.text().then((e) => changer(e))
+    );
+    fetch(`http://localhost:1234/search/data/${userName}`).then((e) =>
       e.json().then((e) => finders(e))
     );
-    fetch(`/user/name`)
+    fetch(`http://localhost:1234/user/name`)
       .then((e) => e.text())
       .then((e) => finder(e));
-    fetch(`/privacy`)
+    fetch(`http://localhost:1234/privacy`)
       .then((e) => e.text())
       .then((e) => privated(e));
   }, [userName]);
@@ -36,7 +38,7 @@ const EditModal: FunctionComponent = (props) => {
               <h4>Edit Your Profile Ove Here And Save The Changes</h4>
             </div>
             <div className="modal-body">
-              <form method="POST" action="/update">
+              <form method="POST" action="http://localhost:1234/update">
                 <div className="form-group">
                   <label htmlFor="message">About</label>
                   <textarea
