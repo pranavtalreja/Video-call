@@ -39,7 +39,6 @@ const Home: FunctionComponent = () => {
                   heavy increase in the use of online collaboration tools to
                   boost work from home productivity.
                 </p>
-
                 <p>
                   {" "}
                   In current times there has been heavy increase in the use of
@@ -50,8 +49,11 @@ const Home: FunctionComponent = () => {
                   tools and added more to make work collab more efficient in a
                   safe platform to ensure the users are mentally healthy.
                 </p>
-                <p>For Hackathon Team Members Icluded Are -</p>
-                <p>Abhinav Prem, Pranav Talreja, Arnav Gupta</p>
+                <p>
+                  Made by ARNAV GUPTA, MPANNDDMROMSPAWG and ANANYA GUPTA thanks
+                  to PRANAV TALREJA AND ABHINAV PREM
+                </p>
+                <p>Teacher - ARVIND SINGH KUMAR SIR</p>
               </div>
             </div>
           </section>
@@ -79,8 +81,11 @@ const Home: FunctionComponent = () => {
                   tools and added more to make work collab more efficient in a
                   safe platform to ensure the users are mentally healthy.
                 </p>
-                <p>For Hackathon Team Members Icluded Are -</p>
-                <p>Abhinav Prem, Pranav Talreja, Arnav Gupta</p>
+                <p>
+                  Made by ARNAV GUPTA, MPANNDDMROMSPAWG and ANANYA GUPTA thanks
+                  to PRANAV TALREJA AND ABHINAV PREM
+                </p>
+                <p>Teacher - ARVIND SINGH KUMAR SIR</p>
               </div>
             </div>
           </section>
