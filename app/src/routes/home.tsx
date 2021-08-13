@@ -53,7 +53,7 @@ const Home: FunctionComponent = () => {
                   Made by ARNAV GUPTA, MPANNDDMROMSPAWG and ANANYA GUPTA thanks
                   to PRANAV TALREJA AND ABHINAV PREM
                 </p>
-                <p>Teacher - ARVIND SINGH KUMAR SIR</p>
+                <p>Teacher - ARVIND SINGH KUMAR SIR, NIDHI ANAND</p>
               </div>
             </div>
           </section>
@@ -85,7 +85,7 @@ const Home: FunctionComponent = () => {
                   Made by ARNAV GUPTA, MPANNDDMROMSPAWG and ANANYA GUPTA thanks
                   to PRANAV TALREJA AND ABHINAV PREM
                 </p>
-                <p>Teacher - ARVIND SINGH KUMAR SIR</p>
+                <p>Teacher - ARVIND SINGH KUMAR SIR, NIDHI ANAND</p>
               </div>
             </div>
           </section>
